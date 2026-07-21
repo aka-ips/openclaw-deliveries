@@ -17,6 +17,11 @@
 
 - **Claude**: 設計、指示、監査、検証、緊急時作業
 - **Codex**: 作業実行、検証、緊急時指示
+- **マカロニ**: BOT エージェント（タスク実行・検証）
+- **ケン**: BOT エージェント（タスク実行・検証）
+- **レクス**: BOT エージェント（タスク実行・検証）
+- **エリク**: BOT エージェント（タスク実行・検証）
+- **ブレイク**: BOT エージェント（タスク実行・検証）
 
 ## ファイル構成
 
@@ -26,10 +31,20 @@
 │   └── system.md          # システム設定
 ├── memory/
 │   ├── claude-memory.md   # Claude 永久記憶
-│   └── codex-memory.md    # Codex 永久記憶
+│   ├── codex-memory.md    # Codex 永久記憶
+│   ├── macaroni-memory.md # マカロニ永久記憶
+│   ├── ken-memory.md      # ケン永久記憶
+│   ├── rex-memory.md      # レクス永久記憶
+│   ├── erik-memory.md     # エリク永久記憶
+│   └── blake-memory.md    # ブレイク永久記憶
 └── bots/
     ├── claude-bot.md      # Claude BOT（Codex との共有）
-    └── codex-bot.md       # Codex BOT（Claude との共有）
+    ├── codex-bot.md       # Codex BOT（Claude との共有）
+    ├── macaroni-bot.md    # マカロニ BOT
+    ├── ken-bot.md         # ケン BOT
+    ├── rex-bot.md         # レクス BOT
+    ├── erik-bot.md        # エリク BOT
+    └── blake-bot.md       # ブレイク BOT
 ```
 
 ## 記憶ファイル更新ルール
