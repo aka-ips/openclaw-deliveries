@@ -66,3 +66,6 @@
 - [2026-07-22] MacBook へのダウンロードは `git clone` → `git checkout claude/code-work-od3ic7`
 - [2026-07-22] `.graphify/` はドットフォルダのため Finder では `Cmd+Shift+.` で表示切替が必要
 - [2026-07-22] Obsidian で閲覧可能（Vault = `openclaw-deliveries` フォルダを指定）
+- [2026-07-22] Obsidian リンク構造: 全15ファイルに [[wikilink]] 追加済、system.md に Mermaid 関係図追加
+- [2026-07-22] MacBook 反映手順: `git pull origin claude/code-work-od3ic7` → Obsidian で Vault を開く
+- [2026-07-22] Graphify はアプリ不要の Markdown ベースシステム。Obsidian/Typora/VS Code 等で閲覧可能
