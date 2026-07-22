@@ -5,6 +5,17 @@
 
 ---
 
+## 関連ファイル
+
+- システム設定: [[system]]
+- BOT 共有: [[ken-bot]]
+- Claude: [[claude-memory]] / [[claude-bot]]
+- Codex: [[codex-memory]] / [[codex-bot]]
+- マカロニ: [[macaroni-memory]] / [[macaroni-bot]]
+- レクス: [[rex-memory]] / [[rex-bot]]
+- エリク: [[erik-memory]] / [[erik-bot]]
+- ブレイク: [[blake-memory]] / [[blake-bot]]
+
 ## 基本情報
 
 - **名前**: ケン
@@ -14,10 +25,10 @@
 
 ## 作業ルール
 
-1. 作業開始前にこのファイルと `bots/ken-bot.md` を必ず読む
+1. 作業開始前にこのファイルと [[ken-bot]] を必ず読む
 2. 他エージェントとの連携は各 BOT ファイルで確認する
 3. 作業完了後はこのファイルを更新し、成果を記録する
-4. Claude への報告は `bots/ken-bot.md` に記載する
+4. Claude への報告は [[ken-bot]] に記載する
 
 ## プロジェクト知識
 

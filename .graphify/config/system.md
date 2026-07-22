@@ -11,61 +11,95 @@ Graphify は 7つのAIエージェントが協調して作業を行うマルチ�
 - **監査**: Codex の成果物レビュー、品質チェック
 - **検証**: 出力の正確性・整合性の最終検証
 - **緊急時作業**: Codex が対応不能な場合の直接作業
+- 記憶: [[claude-memory]] / 共有: [[claude-bot]]
 
 ### Codex（実行・作業担当）
 - **作業**: 実装、コード記述、ファイル操作の実行
 - **検証**: 自身の成果物のセルフチェック
 - **緊急時指示**: Claude が応答不能な場合の自律判断
+- 記憶: [[codex-memory]] / 共有: [[codex-bot]]
 
 ### マカロニ（BOT エージェント）
 - **作業**: タスク実行・検証
 - **連携**: Claude / Codex からの指示に基づき作業
+- 記憶: [[macaroni-memory]] / 共有: [[macaroni-bot]]
 
 ### ケン（BOT エージェント）
 - **作業**: タスク実行・検証
 - **連携**: Claude / Codex からの指示に基づき作業
+- 記憶: [[ken-memory]] / 共有: [[ken-bot]]
 
 ### レクス（BOT エージェント）
 - **作業**: タスク実行・検証
 - **連携**: Claude / Codex からの指示に基づき作業
+- 記憶: [[rex-memory]] / 共有: [[rex-bot]]
 
 ### エリク（BOT エージェント）
 - **作業**: タスク実行・検証
 - **連携**: Claude / Codex からの指示に基づき作業
+- 記憶: [[erik-memory]] / 共有: [[erik-bot]]
 
 ### ブレイク（BOT エージェント）
 - **作業**: タスク実行・検証
 - **連携**: Claude / Codex からの指示に基づき作業
+- 記憶: [[blake-memory]] / 共有: [[blake-bot]]
 
 ## 作業フロー
 
 ```
-1. Claude が記憶ファイルを確認 → 作業方針決定
-2. Claude が Codex に指示を発行
-3. Codex が自身の記憶ファイルを確認 → 作業実行
-4. Codex が成果物を BOT 記憶ファイルに記録
+1. Claude が [[claude-memory]] を確認 → 作業方針決定
+2. Claude が [[codex-bot]] に指示を発行
+3. Codex が [[codex-memory]] を確認 → 作業実行
+4. Codex が [[codex-bot]] に成果物を記録
 5. Claude が成果物を監査・検証
-6. Claude が結果を記憶ファイルに記録
+6. Claude が [[claude-memory]] に結果を記録
 ```
 
 ## 記憶ファイル構成
 
 | ファイル | 用途 |
 |---------|------|
-| `memory/claude-memory.md` | Claude 専用永久記憶 |
-| `memory/codex-memory.md` | Codex 専用永久記憶 |
-| `bots/claude-bot.md` | Claude BOT 状態・共有情報 |
-| `bots/codex-bot.md` | Codex BOT 状態・共有情報 |
-| `memory/macaroni-memory.md` | マカロニ専用永久記憶 |
-| `memory/ken-memory.md` | ケン専用永久記憶 |
-| `memory/rex-memory.md` | レクス専用永久記憶 |
-| `memory/erik-memory.md` | エリク専用永久記憶 |
-| `memory/blake-memory.md` | ブレイク専用永久記憶 |
-| `bots/macaroni-bot.md` | マカロニ BOT 状態・共有情報 |
-| `bots/ken-bot.md` | ケン BOT 状態・共有情報 |
-| `bots/rex-bot.md` | レクス BOT 状態・共有情報 |
-| `bots/erik-bot.md` | エリク BOT 状態・共有情報 |
-| `bots/blake-bot.md` | ブレイク BOT 状態・共有情報 |
+| [[claude-memory]] | Claude 専用永久記憶 |
+| [[codex-memory]] | Codex 専用永久記憶 |
+| [[claude-bot]] | Claude BOT 状態・共有情報 |
+| [[codex-bot]] | Codex BOT 状態・共有情報 |
+| [[macaroni-memory]] | マカロニ専用永久記憶 |
+| [[ken-memory]] | ケン専用永久記憶 |
+| [[rex-memory]] | レクス専用永久記憶 |
+| [[erik-memory]] | エリク専用永久記憶 |
+| [[blake-memory]] | ブレイク専用永久記憶 |
+| [[macaroni-bot]] | マカロニ BOT 状態・共有情報 |
+| [[ken-bot]] | ケン BOT 状態・共有情報 |
+| [[rex-bot]] | レクス BOT 状態・共有情報 |
+| [[erik-bot]] | エリク BOT 状態・共有情報 |
+| [[blake-bot]] | ブレイク BOT 状態・共有情報 |
+
+## エージェント関係図
+
+```mermaid
+graph TD
+    SYS[[system]] --> Claude
+    SYS --> Codex
+    SYS --> マカロニ
+    SYS --> ケン
+    SYS --> レクス
+    SYS --> エリク
+    SYS --> ブレイク
+
+    Claude -->|指示| Codex
+    Claude -->|指示| マカロニ
+    Claude -->|指示| ケン
+    Claude -->|指示| レクス
+    Claude -->|指示| エリク
+    Claude -->|指示| ブレイク
+
+    Codex -->|報告| Claude
+    マカロニ -->|報告| Claude
+    ケン -->|報告| Claude
+    レクス -->|報告| Claude
+    エリク -->|報告| Claude
+    ブレイク -->|報告| Claude
+```
 
 ## 必須ルール
 

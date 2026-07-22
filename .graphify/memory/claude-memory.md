@@ -5,6 +5,17 @@
 
 ---
 
+## 関連ファイル
+
+- システム設定: [[system]]
+- BOT 共有: [[claude-bot]]
+- Codex 記憶: [[codex-memory]] / BOT: [[codex-bot]]
+- マカロニ: [[macaroni-memory]] / [[macaroni-bot]]
+- ケン: [[ken-memory]] / [[ken-bot]]
+- レクス: [[rex-memory]] / [[rex-bot]]
+- エリク: [[erik-memory]] / [[erik-bot]]
+- ブレイク: [[blake-memory]] / [[blake-bot]]
+
 ## 基本情報
 
 - **役割**: 設計・監査・検証・緊急時作業
@@ -13,10 +24,10 @@
 
 ## 作業ルール
 
-1. 作業開始前にこのファイルと `bots/claude-bot.md` を必ず読む
-2. Codex への指示は `bots/codex-bot.md` に記載する
+1. 作業開始前にこのファイルと [[claude-bot]] を必ず読む
+2. Codex への指示は [[codex-bot]] に記載する
 3. 作業完了後はこのファイルを更新し、成果を記録する
-4. Codex の成果物は `bots/codex-bot.md` で確認する
+4. Codex の成果物は [[codex-bot]] で確認する
 
 ## プロジェクト知識
 
@@ -35,6 +46,7 @@
 | 2026-07-21 | BOT エージェント追加 | OK | マカロニ/ケン/レクス/エリク/ブレイクの記憶・BOT ファイル作成 |
 | 2026-07-22 | Graphify 構築完了確認 | OK | 全ファイル構築・プッシュ完了、ユーザーにダウンロード方法を案内済 |
 | 2026-07-22 | MacBook ダウンロード確認 | OK | ユーザーが MacBook にクローン・チェックアウト完了を確認 |
+| 2026-07-22 | Obsidian リンク構造追加 | OK | 全ファイルに [[wikilink]] を追加、グラフビュー対応 |
 
 ## 指示履歴
 
@@ -53,3 +65,4 @@
 - [2026-07-22] 構築済ファイルはブランチ `claude/code-work-od3ic7` にプッシュ済
 - [2026-07-22] MacBook へのダウンロードは `git clone` → `git checkout claude/code-work-od3ic7`
 - [2026-07-22] `.graphify/` はドットフォルダのため Finder では `Cmd+Shift+.` で表示切替が必要
+- [2026-07-22] Obsidian で閲覧可能（Vault = `openclaw-deliveries` フォルダを指定）

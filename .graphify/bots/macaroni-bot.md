@@ -5,6 +5,12 @@
 
 ---
 
+## 関連ファイル
+
+- マカロニ記憶: [[macaroni-memory]]
+- システム設定: [[system]]
+- 他エージェント BOT: [[claude-bot]] / [[codex-bot]] / [[ken-bot]] / [[rex-bot]] / [[erik-bot]] / [[blake-bot]]
+
 ## 現在のステータス
 
 - **状態**: 待機中

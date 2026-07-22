@@ -5,6 +5,12 @@
 
 ---
 
+## 関連ファイル
+
+- エリク記憶: [[erik-memory]]
+- システム設定: [[system]]
+- 他エージェント BOT: [[claude-bot]] / [[codex-bot]] / [[macaroni-bot]] / [[ken-bot]] / [[rex-bot]] / [[blake-bot]]
+
 ## 現在のステータス
 
 - **状態**: 待機中

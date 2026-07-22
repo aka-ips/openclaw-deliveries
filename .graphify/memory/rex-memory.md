@@ -5,6 +5,17 @@
 
 ---
 
+## 関連ファイル
+
+- システム設定: [[system]]
+- BOT 共有: [[rex-bot]]
+- Claude: [[claude-memory]] / [[claude-bot]]
+- Codex: [[codex-memory]] / [[codex-bot]]
+- マカロニ: [[macaroni-memory]] / [[macaroni-bot]]
+- ケン: [[ken-memory]] / [[ken-bot]]
+- エリク: [[erik-memory]] / [[erik-bot]]
+- ブレイク: [[blake-memory]] / [[blake-bot]]
+
 ## 基本情報
 
 - **名前**: レクス
@@ -14,10 +25,10 @@
 
 ## 作業ルール
 
-1. 作業開始前にこのファイルと `bots/rex-bot.md` を必ず読む
+1. 作業開始前にこのファイルと [[rex-bot]] を必ず読む
 2. 他エージェントとの連携は各 BOT ファイルで確認する
 3. 作業完了後はこのファイルを更新し、成果を記録する
-4. Claude への報告は `bots/rex-bot.md` に記載する
+4. Claude への報告は [[rex-bot]] に記載する
 
 ## プロジェクト知識
 

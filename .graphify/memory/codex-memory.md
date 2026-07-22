@@ -5,6 +5,17 @@
 
 ---
 
+## 関連ファイル
+
+- システム設定: [[system]]
+- BOT 共有: [[codex-bot]]
+- Claude 記憶: [[claude-memory]] / BOT: [[claude-bot]]
+- マカロニ: [[macaroni-memory]] / [[macaroni-bot]]
+- ケン: [[ken-memory]] / [[ken-bot]]
+- レクス: [[rex-memory]] / [[rex-bot]]
+- エリク: [[erik-memory]] / [[erik-bot]]
+- ブレイク: [[blake-memory]] / [[blake-bot]]
+
 ## 基本情報
 
 - **役割**: 作業実行・検証・緊急時指示
@@ -13,10 +24,10 @@
 
 ## 作業ルール
 
-1. 作業開始前にこのファイルと `bots/codex-bot.md` を必ず読む
-2. Claude からの指示は `bots/codex-bot.md` で確認する
+1. 作業開始前にこのファイルと [[codex-bot]] を必ず読む
+2. Claude からの指示は [[codex-bot]] で確認する
 3. 作業完了後はこのファイルを更新し、成果を記録する
-4. Claude への報告は `bots/codex-bot.md` に記載する
+4. Claude への報告は [[codex-bot]] に記載する
 
 ## 技術知識
 
